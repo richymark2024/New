@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamGuard Nigeria - Your Exam, Our Priority</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Custom CSS for humanized, less robotic styling -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-bg {
+            background-color: #f9fafb;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        /* Smooth transitions for interactivity */
+        .hover-scale {
+            transition: transform 0.3s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <!-- Google Fonts for a warm, human touch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-gray-200 fixed w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://via.placeholder.com/40?text=EG" class="h-8" alt="ExamGuard Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">ExamGuard Nigeria</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                        <a href="#home" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Home</a>
+                    </li>
+                    <li>
+                        <a href="#courses" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Courses & Exams</a>
+                    </li>
+                    <li>
+                        <a href="#coding" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Coding Institute</a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#marketplace" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Marketplace</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white bg-green-600 rounded md:bg-green-600 md:text-white md:p-2">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Replicating the attached image) -->
+    <section id="home" class="hero-bg relative h-screen flex items-center justify-center text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for readability -->
+        <div class="relative z-10 max-w-screen-xl mx-auto px-4 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to ExamGuard Nigeria</h1>
+            <p class="text-xl md:text-2xl mb-8">Your Exam, Our Priority</p>
+            <div class="flex flex-col md:flex-row justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#courses" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Browse Courses</a>
+                <a href="#" class="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Sign Up Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 section-bg">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Discover ExamGuard Nigeria</h2>
+            <p class="text-lg text-center mb-12 max-w-3xl mx-auto">We're more than just a learning platform—we're your partner in academic success. From tailored mock exams to vibrant student communities, we empower you to thrive in your studies and beyond.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Study Materials" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Comprehensive Study Resources</h3>
+                    <p>Access past questions, detailed study guides, and interactive materials designed for Nigerian universities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Community" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Engaging Student Community</h3>
+                    <p>Join discussions, share insights, and connect with peers across the country.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Earn While Learning" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Earn as You Learn</h3>
+                    <p>Publish articles, read content, and participate in our marketplace to turn knowledge into rewards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses & Exams Section -->
+    <section id="courses" class="py-16">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Courses, Mock Tests & Exams</h2>
+            <p class="text-lg text-center mb-12 max-w-3xl mx-auto">Prepare effectively with our university-specific mock tests, past questions, and curated study materials.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mock Tests" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Mock Tests</h3>
+                    <p>Simulate real exam environments for top Nigerian universities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1459183885421-5cc683b7dbba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Past Questions" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Past Questions</h3>
+                    <p>Extensive archive of previous exams to boost your preparation.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Study Materials" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Study Materials</h3>
+                    <p>In-depth notes and resources tailored to your curriculum.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interactive Quizzes" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Interactive Quizzes</h3>
+                    <p>Engage with dynamic quizzes to test and reinforce your knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Institute Section -->
+    <section id="coding" class="py-16 section-bg">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">CODECX Institute for Developers</h2>
+            <p class="text-lg text-center mb-12 max-w-3xl mx-auto">Dive into coding with hands-on programs, tutorials, and projects designed for aspiring developers.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coding Institute" class="w-full md:w-1/2 rounded-lg">
+                <div class="w-full md:w-1/2">
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li>Beginner to advanced coding courses in languages like Python, JavaScript, and more.</li>
+                        <li>Real-world projects to build your portfolio.</li>
+                        <li>Mentorship from industry experts.</li>
+                        <li>Certification upon completion to enhance your career.</li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Student Blog & Earnings</h2>
+            <p class="text-lg text-center mb-12 max-w-3xl mx-auto">Share your thoughts, publish articles, and earn rewards. Readers get paid too for engaging with content!</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Publish Articles" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Publish & Earn</h3>
+                    <p>Write about your experiences and get compensated for quality content.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1499754162580-4be479085c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Read & Earn" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Read & Earn</h3>
+                    <p>Discover insightful articles and earn by participating actively.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Community Discussions" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Join Discussions</h3>
+                    <p>Engage in conversations and build a network of like-minded students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="py-16 section-bg">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Student Marketplace</h2>
+            <p class="text-lg text-center mb-12 max-w-3xl mx-auto">Buy, sell, and trade study tools, gadgets, and services within our secure community.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Buy & Sell" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Buy & Sell Items</h3>
+                    <p>From textbooks to tech, find what you need at student-friendly prices.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow hover-scale">
+                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Services" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Offer Services</h3>
+                    <p>Tutoring, freelancing, and more—turn your skills into opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">What Students Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <p class="mb-4">"ExamGuard transformed my study routine. The mock tests were spot on!"</p>
+                    <p class="font-semibold">- Aisha, University of Lagos</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <p class="mb-4">"Earning from blogging while learning is a game-changer."</p>
+                    <p class="font-semibold">- Chidi, Ahmadu Bello University</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <p class="mb-4">"The coding courses at CODECX are practical and inspiring."</p>
+                    <p class="font-semibold">- Fatima, University of Ibadan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 section-bg">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Your Name</label>
+                    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your Email</label>
+                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Message</label>
+                    <textarea id="message" rows="4" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 w-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">ExamGuard Nigeria</h3>
+                    <p>Your Exam, Our Priority</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#courses" class="hover:text-blue-300">Courses</a></li>
+                        <li><a href="#blog" class="hover:text-blue-300">Blog</a></li>
+                        <li><a href="#marketplace" class="hover:text-blue-300">Marketplace</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-300">FAQ</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-blue-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-300"><img src="https://via.placeholder.com/24?text=FB" alt="Facebook"></a>
+                        <a href="#" class="hover:text-blue-300"><img src="https://via.placeholder.com/24?text=TW" alt="Twitter"></a>
+                        <a href="#" class="hover:text-blue-300"><img src="https://via.placeholder.com/24?text=IG" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-sm">&copy; 2025 ExamGuard Nigeria. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission (Example) -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent successfully!');
+        });
+    </script>
+
+</body>
+</html>
